@@ -1,0 +1,47 @@
+<div class="container" >
+  
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" >
+
+<div class="form-group" >
+
+  <label for="">name</label>
+  <input name="name" ngModel  type="text" class="form-control">
+
+</div>
+<div class="form-group" >
+  
+    <label for="">email</label>
+    <input name="email" ngModel  type="text" class="form-control">
+  
+  </div>
+  <div class="form-group" >
+    
+      <label for="">phoneno</label>
+      <input type="text" name="phoneno" ngModel  class="form-control">
+    
+    </div>
+    <div class="form-group" ngModelGroup="address">
+      
+                      <div class="form-group">
+                        
+                          <label >street</label>
+                          <input type="text" class="form-control"  name="street" ngModel>
+                        </div>
+                          <div class="form-group">
+                            
+                             <label >city</label>
+                             <input type="text" class="form-control" name="city" ngModel >
+                          </div>
+                          <div class="form-group">
+                            
+                              <label >postelcode</label>
+                              <input type="text" class="form-control"  name="postelcode" ngModel>
+                          </div>
+                      </div>
+
+          <button class="btn btn-primary">Submit</button>
+  
+</form>
+https://github.com/abhigun1234/form
+
+</div>

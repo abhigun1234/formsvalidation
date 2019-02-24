@@ -1,0 +1,43 @@
+<div class="container" >
+ 
+  <form #userform="ngForm" (ngSubmit)="onSubmit(userform.value)" >
+  <div class="form-group">
+
+ <label >name</label>
+ <input type="text" class="form-control" >
+  </div>
+  
+      <div class="form-group">
+        
+         <label >email</label>
+         <input type="text" class="form-control" name="name" ngModel>
+          </div>
+          <div class="form-group">
+            
+             <label >phoneno</label>
+             <input type="text" class="form-control"  name="email" ngModel>
+              </div>
+              <div class="form-group" ngModelGroup="address">
+
+                <div class="form-group">
+                  
+                    <label >street</label>
+                    <input type="text" class="form-control"  name="street" ngModel>
+                  </div>
+                    <div class="form-group">
+                      
+                       <label >city</label>
+                       <input type="text" class="form-control" name="city" ngModel >
+                    </div>
+                    <div class="form-group">
+                      
+                        <label >postelcode</label>
+                        <input type="text" class="form-control"  name="postelcode" ngModel>
+                    </div>
+                </div>
+              
+                          <button class="btn btn-primary">submit</button>
+                                        
+ </form>
+
+</div>
